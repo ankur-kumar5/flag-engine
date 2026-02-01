@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dark Theme</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag @theme.stylesheet %>
+  </head>
+
+  <body class="theme-dark">
+    <%= render "shared/header" %>
+    <%= yield %>
+  </body>
+</html>

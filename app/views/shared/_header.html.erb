@@ -1,0 +1,11 @@
+<header>
+  <% if Flipper.enabled?(:dark_mode, current_user) %>
+    <div style="position: absolute; top: 10px; right: 10px; width: auto;">
+      <% if cookies[:moon] %>
+          <%= button_to 'Light Mode', sun_path, method: :get, style: "background-color: #e5e7eb; color: #111827;" %>
+      <% else %>
+          <%= button_to 'Dark Mode', moon_path, method: :get, style: "background-color: #1f2937; color: #f9fafb;" %>
+      <% end %>
+    </div>
+  <% end %>
+</header>

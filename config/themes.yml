@@ -1,0 +1,5 @@
+light:
+  layout: layouts/themes/light/application
+
+dark:
+  layout: layouts/themes/dark/application
